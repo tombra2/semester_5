@@ -17,4 +17,23 @@ public class Calculation {
     public Number getResult() {
         return sign.perform(this.num1, this.num2);
     }
+
+    public Number getCalculationFromString(String str){
+        double num1;
+        String sign;
+        double num2;
+        String prep =str.trim();
+
+        for (int i = 0; i < str.length(); i++) {
+
+
+        }
+
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s  %s = %s",this.num1,this.sign, this.num2,this.getResult());
+    }
 }
